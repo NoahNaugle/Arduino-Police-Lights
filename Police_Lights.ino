@@ -1,10 +1,13 @@
 /** 
+
 This is a setup I created for addressing individual
 LEDS for my specific setup, using the FastLED library.
 Anyone can create their own led setup/ Police light bar
 using a simple copy/paste idea. It is not the best in the world, 
 but if it works it ain't bad right? ;)
+
 Noah
+
 **/
 
 #include "FastLED.h"          // import FastLED library
