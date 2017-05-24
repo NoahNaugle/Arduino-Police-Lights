@@ -1,27 +1,38 @@
-#include "FastLED.h"
-#define COLOR_ORDER GRB
-#define LED_TYPE WS2812
-#define NUM_LEDS 53
-#define NUM_LEDS3 12
+/** 
 
-CRGB leds1[NUM_LEDS];
+This is a setup I created for addressing individual
+LEDS for my specific setup, using the FastLED library.
+Anyone can create their own led setup/ Police light bar
+using a simple copy/paste idea. It is not the best in the world, 
+but if it works it ain't bad right? ;)
+
+Noah
+
+**/
+#include "FastLED.h"        // import FastLED library
+#define COLOR_ORDER GRB
+#define LED_TYPE WS2812     
+#define NUM_LEDS 53         // 2 leds strips connected to pin 5,6
+#define NUM_LEDS3 12        // 1 leds strip connected to pin 7
+
+CRGB leds1[NUM_LEDS];       
 CRGB leds2[NUM_LEDS];
 CRGB leds3[NUM_LEDS3];
 
 void setup() {
 
-  FastLED.addLeds<NEOPIXEL, 5>(leds1, NUM_LEDS);
-  FastLED.addLeds<NEOPIXEL, 6>(leds2, NUM_LEDS);
-  FastLED.addLeds<NEOPIXEL, 7>(leds3, NUM_LEDS3);
+  FastLED.addLeds<NEOPIXEL, 5>(leds1, NUM_LEDS);    // strip 1
+  FastLED.addLeds<NEOPIXEL, 6>(leds2, NUM_LEDS);    // strip 2
+  FastLED.addLeds<NEOPIXEL, 7>(leds3, NUM_LEDS3);   // strip 3
 }
 
 void loop() {
-  for(int i = 0; i < NUM_LEDS; i++) {
+  for(int i = 0; i < NUM_LEDS; i++) { // this basically let you call i for each led in the strip 
   ////
-  leds1[0] = CRGB::Red;
-  leds1[1] = CRGB::Red;
-  leds1[2] = CRGB::Red;
-  leds1[3] = CRGB::Red;
+  leds1[0] = CRGB::Red;       // remember first led is index 0 
+  leds1[1] = CRGB::Red;       // and in my case ends at 52
+  leds1[2] = CRGB::Red;       // the repeated spagetti code, give the illusion of flashing the leds super quickly...
+  leds1[3] = CRGB::Red;       // the rest is pretty self-understandable, red on, red off(black), blue on, blue off(black)
   leds1[4] = CRGB::Red;
   leds1[5] = CRGB::Red;
   leds1[6] = CRGB::Red;
