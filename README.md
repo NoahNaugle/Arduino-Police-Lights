@@ -43,8 +43,6 @@ leds3 0-------11>                 //computer case strip
 
 
 
-# Conclusion
-
 The format for the files consists of a array group for better organization. 
 
 
