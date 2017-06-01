@@ -108,24 +108,24 @@ All together it looks like this:
 ```c++
 void loop() {
 	for(int x = 0; x < 3; x++) {	//repeat the flash 3 times, makes it look real, change to preference
-    /* being able to set each group to red or blue also gives the simple opportunity 
-    if you want to change the color to a different shade on the fly*/
-    group1 = color1;      //set group1 = red
-    group11 = color1;     //set group11 = red
-    group21 = color1;     //set group21 = red
+    		/* being able to set each group to red or blue also gives the simple opportunity 
+    		if you want to change the color to a different shade on the fly*/
+    		group1 = color1;      //set group1 = red
+    		group11 = color1;     //set group11 = red
+    		group21 = color1;     //set group21 = red
     
-    FastLED.show(100);    //show and delay
-    delay(50);
+    		FastLED.show(100);    //show and delay
+    		delay(50);
     
-    group11 = color3;     //set group1 = black
-    group11 = color3;     //set group11 = black
-    group11 = color3;     //set group21 = black
+    		group11 = color3;     //set group1 = black
+    		group11 = color3;     //set group11 = black
+    		group11 = color3;     //set group21 = black
     
-    FastLED.show(100);    //show and delay
-    delay(50);
-    /*except this is an endless flash of red ;)
-    Check out the sketchs and have fun creating your own!*/
-    }
+    		FastLED.show(100);    //show and delay
+    		delay(50);
+    		/*except this is an endless flash of red ;)
+    		Check out the sketchs and have fun creating your own!*/
+    	}
 }
 ```
 
