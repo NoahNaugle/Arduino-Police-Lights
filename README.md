@@ -129,5 +129,20 @@ void loop() {
 }
 ```
 
-After all the setup, you can easily set each group and set their color to create some unique police patterns!
+After all the setup, you can easily set each group and set their color to create some unique police patterns! Here is a visual of each I have created so far: 
+
+
+![](https://media.giphy.com/media/nyguypI9Av612/giphy.gif)
+
+![](https://media.giphy.com/media/YJk4QGRT5AYXS/giphy.gif)
+
+![](https://media.giphy.com/media/12Hz5eSxVqaM7u/giphy.gif)
+
+![](https://media.giphy.com/media/wwuef0iExHFO8/giphy.gif)
+
+![](https://media.giphy.com/media/Xzjr10xTYdrws/giphy.gif)
+
+![](https://media.giphy.com/media/olWZtQJcAoNgs/giphy.gif)
+
+![](https://media.giphy.com/media/rLmfcwQ7zlEA0/giphy.gif)
 
