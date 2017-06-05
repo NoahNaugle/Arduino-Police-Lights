@@ -1,6 +1,10 @@
 # Arduino-Police-Lights
 Police lights setup using WS2812 LEDS and arduino uno 
 
+If you want to see how I built the wooden part or the enclosure, check out the imgur album:
+
+https://imgur.com/a/3wvBW
+
 # Setup
 
 Change x to how many leds you have per strip
